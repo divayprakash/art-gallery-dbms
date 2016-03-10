@@ -1,2 +1,2 @@
-# event-management
+# timetable-creator
 Project for DBMS
