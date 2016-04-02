@@ -28,7 +28,7 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <GridPane prefHeight="510.0" prefWidth="600.0">
+                                    <GridPane layoutY="-1.0" prefHeight="510.0" prefWidth="600.0">
                                       <columnConstraints>
                                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="201.0" />
                                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="399.0" />
@@ -74,7 +74,7 @@
                                                 <TextField fx:id="artistLastName" maxWidth="150.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                                              </children>
                                           </GridPane>
-                                          <Button fx:id="artistSubmit" mnemonicParsing="false" text="Enter data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                          <Button fx:id="artistData" mnemonicParsing="false" text="Enter artist data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
                                           <DatePicker fx:id="artistDOB" showWeekNumbers="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                        </children>
                                     </GridPane>
@@ -84,7 +84,53 @@
                       </Tab>
                       <Tab text="Artwork">
                         <content>
-                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane prefHeight="510.0" prefWidth="600.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="207.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="395.0" minWidth="10.0" prefWidth="393.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" text="Arist Name" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                          <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <TextField fx:id="artworkArtistFirstName" maxWidth="150.0" promptText="First Name" GridPane.halignment="CENTER" />
+                                                <TextField fx:id="artworkArtistLastName" maxWidth="150.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                             </children>
+                                          </GridPane>
+                                          <Label text="Title" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                          <TextField fx:id="artworkTitle" maxWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                          <Label text="Year" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                          <Label text="Type of Art" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                          <Label text="Themes" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                          <Label text="Price" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                          <TextField fx:id="artworkYear" maxWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                          <TextField fx:id="artworkType" maxWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                          <TextField fx:id="artworkThemes" alignment="TOP_LEFT" maxHeight="50.0" maxWidth="300.0" promptText="Enter comma-separated list" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                          <TextField fx:id="artworkPrice" maxWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                          <Button fx:id="artworkData" mnemonicParsing="false" text="Enter artwork data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
                         </content>
                       </Tab>
                         <Tab text="Customer">
