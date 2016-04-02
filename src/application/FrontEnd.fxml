@@ -45,7 +45,7 @@
                                        <children>
                                           <Label alignment="BOTTOM_LEFT" text="Name" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                           <Label text="Birthplace" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                                          <Label text="Age" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                                          <Label text="Date of Birth" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                           <Label text="Style of Art" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
                                           <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                                             <columnConstraints>
@@ -56,12 +56,11 @@
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <TextField maxWidth="150.0" promptText="City" GridPane.halignment="CENTER" />
-                                                <TextField maxWidth="150.0" promptText="Country" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                <TextField fx:id="artistCity" maxWidth="150.0" promptText="City" GridPane.halignment="CENTER" />
+                                                <TextField fx:id="artistCountry" maxWidth="150.0" promptText="Country" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                                              </children>
                                           </GridPane>
-                                          <Slider majorTickUnit="10.0" maxWidth="300.0" minorTickCount="2" showTickLabels="true" showTickMarks="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                                          <TextArea maxHeight="50.0" maxWidth="300.0" prefHeight="200.0" prefWidth="200.0" promptText="Enter comma-separated list" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                                          <TextArea fx:id="artistStyle" maxHeight="50.0" maxWidth="300.0" prefHeight="200.0" prefWidth="200.0" promptText="Enter comma-separated list" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
                                           <GridPane GridPane.columnIndex="1">
                                             <columnConstraints>
                                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -71,11 +70,12 @@
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <TextField maxWidth="150.0" promptText="First Name" GridPane.halignment="CENTER" />
-                                                <TextField maxWidth="150.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                                <TextField fx:id="artistFistName" maxWidth="150.0" promptText="First Name" GridPane.halignment="CENTER" />
+                                                <TextField fx:id="artistLastName" maxWidth="150.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                                              </children>
                                           </GridPane>
-                                          <Button mnemonicParsing="false" text="Enter data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                          <Button fx:id="artistSubmit" mnemonicParsing="false" text="Enter data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                          <DatePicker fx:id="artistDOB" showWeekNumbers="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                        </children>
                                     </GridPane>
                                  </children>
