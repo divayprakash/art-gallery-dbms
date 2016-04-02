@@ -1,21 +1,26 @@
 # DBMS for Art Gallery
+
 Project for DBMS during SYBTech@IIITD
 
-### Team
+## Team
+
 * [Anant Mittal](http://github.com/anant15)
 * [Divay Prakash](http://github.com/divayprakash)
 
-### Objective
+## Objective
+
 To create fully functional DBMS for an art gallery
 
-### Features
+## Features
+
 * Store data on artist
   * Name
   * Birthplace
   * Age
   * Style of art
 * Store data on art work
-  * Title 
+  * Title
+  * Artist
   * Year it was made
   * Type of art
   * Themes
