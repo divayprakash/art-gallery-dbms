@@ -41,7 +41,25 @@ public class FrontEndController implements Initializable {
 			//handle initialization for artist tab
 		}
 	}
-	@FXML void handleUpdateButtonAction(ActionEvent event) {
+	@FXML void handleArtistSubmit(ActionEvent event) {
+		//handle artist data submit
+	}
+	/*
+	 * Artwork Tab
+	 */
+	@FXML private TextField artworkTitle;
+	@FXML private TextField artworkArtistFirstName;
+	@FXML private TextField artworkArtistLastName;
+	@FXML private TextField artworkYear;
+	@FXML private TextField artworkType;
+	@FXML private TextArea artworkThemes;
+	@FXML private TextField artworkPrice;
+	@FXML void handleArtworkTab(Event event) {
+		if (checkTab()) {
+			//handle initialization for artist tab
+		}
+	}
+	@FXML void handleArtworkSubmit(ActionEvent event) {
 		//handle artist data submit
 	}
 }
