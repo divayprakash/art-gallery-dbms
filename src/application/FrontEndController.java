@@ -79,4 +79,12 @@ public class FrontEndController implements Initializable {
 	@FXML void handleCustomerSubmit(ActionEvent event) {
 		//handle customer data submit
 	}
+	/*
+	 * Queries Tab
+	 */
+	@FXML void handleQueriesTab(Event event) {
+		if (checkTab()) {
+			//handle initialization for Queries tab
+		}
+	}
 }
