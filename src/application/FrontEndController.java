@@ -56,10 +56,27 @@ public class FrontEndController implements Initializable {
 	@FXML private TextField artworkPrice;
 	@FXML void handleArtworkTab(Event event) {
 		if (checkTab()) {
-			//handle initialization for artist tab
+			//handle initialization for artwork tab
 		}
 	}
 	@FXML void handleArtworkSubmit(ActionEvent event) {
-		//handle artist data submit
+		//handle artwork data submit
+	}
+	/*
+	 * Customer Tab
+	 */
+	@FXML private TextField customerFirstName;
+	@FXML private TextField customerLastName;
+	@FXML private TextArea customerAddress;
+	@FXML private TextField customerMoney;
+	@FXML private TextArea cutomerArtists;
+	@FXML private TextArea customerArt;
+	@FXML void handleCustomerTab(Event event) {
+		if (checkTab()) {
+			//handle initialization for customer tab
+		}
+	}
+	@FXML void handleCustomerSubmit(ActionEvent event) {
+		//handle customer data submit
 	}
 }
