@@ -12,15 +12,28 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
+/**
+ * Controller class for FrontEnd.fxml
+ * @author Anant Mittal, Divay Prakash
+ */
 public class FrontEndController implements Initializable {
+	/**
+	 * Called to initialize a controller after its root element has been completely processed
+	 * @param location The location used to resolve relative paths for the root object, or null if the location is not known
+	 * @param resources The resources used to localize the root object, or null if the root object was not localized
+	 * @see javafx.fxml.Initializable#initialize(java.net.URL, java.util.ResourceBundle)
+	 */
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		//initialize function
 	}
-	//boolean variable to enable switching tabs
+	/**
+	 * Boolean variable for tab selection
+	 */
 	private boolean tabSelection = false;
-	/*
-	 * Function to check tab and set bool variable
+	/**
+	 * Checks tab position and sets boolean variable for tab switching
+	 * @return tabSelection
 	 */
 	private boolean checkTab() {
 	    tabSelection = !tabSelection;

@@ -6,11 +6,18 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 
-
+/**
+ * Main class
+ * @author Anant Mittal, Divay Prakash
+ */
 public class Main extends Application {
 	private Stage primaryStage;
 	private AnchorPane pane;
 	@Override
+	/**
+	 * @param primaryStage stage on which all content is displayed
+	 * @throws exception
+	 */
 	public void start(Stage primaryStage) {
 		try {
 			this.primaryStage = primaryStage;
@@ -28,6 +35,10 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
+	/**
+	 * Main method, start of execution
+	 * @param args Command-line arguments
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
