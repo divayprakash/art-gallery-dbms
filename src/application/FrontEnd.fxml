@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <SplitPane dividerPositions="0.1" minHeight="600.0" minWidth="600.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0">
@@ -24,7 +23,7 @@
                <children>
                   <TabPane prefHeight="540.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
                     <tabs>
-                      <Tab text="Artist">
+                      <Tab onSelectionChanged="#handleArtistTab" text="Artist">
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
@@ -70,11 +69,11 @@
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <TextField fx:id="artistFistName" maxWidth="150.0" promptText="First Name" GridPane.halignment="CENTER" />
+                                                <TextField fx:id="artistFirstName" maxWidth="150.0" promptText="First Name" GridPane.halignment="CENTER" />
                                                 <TextField fx:id="artistLastName" maxWidth="150.0" promptText="Last Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                                              </children>
                                           </GridPane>
-                                          <Button fx:id="artistData" mnemonicParsing="false" text="Enter artist data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                                          <Button mnemonicParsing="false" onAction="#handleArtistSubmit" text="Enter artist data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
                                           <DatePicker fx:id="artistDOB" showWeekNumbers="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
                                        </children>
                                     </GridPane>
@@ -82,7 +81,7 @@
                               </AnchorPane>
                         </content>
                       </Tab>
-                      <Tab text="Artwork">
+                      <Tab onSelectionChanged="#handleArtworkTab" text="Artwork">
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
@@ -125,14 +124,14 @@
                                           <TextField fx:id="artworkType" maxWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
                                           <TextField fx:id="artworkThemes" alignment="TOP_LEFT" maxHeight="50.0" maxWidth="300.0" promptText="Enter comma-separated list" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
                                           <TextField fx:id="artworkPrice" maxWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
-                                          <Button fx:id="artworkData" mnemonicParsing="false" text="Enter artwork data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                                          <Button mnemonicParsing="false" onAction="#handleArtworkSubmit" text="Enter artwork data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
                                        </children>
                                     </GridPane>
                                  </children>
                               </AnchorPane>
                         </content>
                       </Tab>
-                        <Tab text="Customer">
+                        <Tab onSelectionChanged="#handleCustomerTab" text="Customer">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
@@ -174,14 +173,14 @@
                                           <TextField fx:id="customerMoney" maxWidth="300.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
                                           <TextArea fx:id="customerArtists" maxHeight="50.0" maxWidth="300.0" promptText="Enter comma-separated list of complete author names" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
                                           <TextArea fx:id="customerArt" maxHeight="50.0" maxWidth="300.0" promptText="Enter comma-separated list" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                                          <Button fx:id="customerData" mnemonicParsing="false" text="Enter customer data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                                          <Button mnemonicParsing="false" onAction="#handleCustomerSubmit" text="Enter customer data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
                                        </children>
                                     </GridPane>
                                  </children>
                               </AnchorPane>
                           </content>
                         </Tab>
-                        <Tab text="Queries">
+                        <Tab onSelectionChanged="#handleQueriesTab" text="Queries">
                           <content>
                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                           </content>
