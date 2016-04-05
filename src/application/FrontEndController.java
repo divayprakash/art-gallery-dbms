@@ -47,7 +47,7 @@ public class FrontEndController implements Initializable {
 	@FXML private TextField artistCity;
 	@FXML private TextField artistCountry;
 	@FXML private DatePicker artistDOB;
-	@FXML private TextArea artistStyles;
+	@FXML private TextArea artistStyle;
 	@FXML private Button artistData;
 	@FXML void handleArtistTab(Event event) {
 		if (checkTab()) {
@@ -82,7 +82,7 @@ public class FrontEndController implements Initializable {
 	@FXML private TextField customerLastName;
 	@FXML private TextArea customerAddress;
 	@FXML private TextField customerMoney;
-	@FXML private TextArea cutomerArtists;
+	@FXML private TextArea customerArtists;
 	@FXML private TextArea customerArt;
 	@FXML void handleCustomerTab(Event event) {
 		if (checkTab()) {
