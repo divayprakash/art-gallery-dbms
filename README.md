@@ -18,18 +18,18 @@ To create fully functional DBMS for an art gallery
   * Name
   * Birthplace
   * Age
-  * Style of art
+  * Style of art - pop art, fauvinism etc.
 * Store data on art work
   * Title
   * Artist
   * Year it was made
-  * Type of art
-  * Themes
+  * Group - still life, landscape, works of Picasso, works of 19th century etc.
+  * Type - painting/lithograph/sculpture/photograph
   * Prices 
 * Store data on customers
   * Name
   * Address
   * Money spent on gallery
   * Preferences of artists
-  * Preferences of types of art
+  * Preferences of group of art
 * Support for related queries
