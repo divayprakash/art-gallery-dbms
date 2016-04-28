@@ -24,26 +24,16 @@
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
                   </Text>
-                  <Text fontSmoothingType="LCD" layoutX="422.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Divay Prakash">
-                     <font>
-                        <Font name="Brush Script MT Italic" size="20.0" />
-                     </font>
-                  </Text>
-                  <Text fontSmoothingType="LCD" layoutX="60.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anant Mittal">
-                     <font>
-                        <Font name="Brush Script MT Italic" size="20.0" />
-                     </font>
-                  </Text>
                </children>
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="315.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Customer Details">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="231.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Customer Details">
                      <font>
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
                   </Text>
-                  <Text fill="#fcf5f5" fontSmoothingType="LCD" layoutX="315.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Mandatory fields">
+                  <Text fill="#fcf5f5" fontSmoothingType="LCD" layoutX="231.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Mandatory fields">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
@@ -93,9 +83,7 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Text fx:id="LabelNewArtistAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="185.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelNewCustomerAlreadyExist" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entry Already Exist" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelNewCustomerMandatoryFields" fill="#d31301" fontSmoothingType="LCD" layoutX="184.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill all the madatory fields" wrappingWidth="192.91455078125" />
+                  <Text fx:id="LabelNewArtistAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="243.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
                   <Button fx:id="NewCustomerMainMenu" layoutX="266.0" layoutY="341.0" mnemonicParsing="false" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
                      <font>
                         <Font name="System Bold" size="13.0" />

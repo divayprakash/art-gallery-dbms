@@ -1,0 +1,45 @@
+#pane{
+	
+	-fx-background-image: url("MainBackground.jpg");
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 600px 507px;
+}
+
+#headpane
+{
+	-fx-background-image: url("TitleBackground.jpg");
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 600px 100px;
+}
+
+#otherpane{
+    
+    -fx-background-image: url("OtherBackground.jpg");
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 600px 600px;
+}
+
+#otherheadpane
+{
+    -fx-background-image: url("OtherBackgroundTitle.jpg");
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 600px 100px;
+}
+
+#edit
+{
+    -fx-background-image: url("editButton.png");
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 45px 45px;
+
+}

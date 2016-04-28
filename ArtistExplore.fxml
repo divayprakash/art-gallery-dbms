@@ -28,52 +28,41 @@
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="166.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Artist Details">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="340.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore Artists">
                      <font>
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="UpdateArtistFirstName" disable="true" layoutX="43.0" layoutY="106.0" opacity="0.75">
+                  <TextField fx:id="ExploreArtistFirstName" layoutX="43.0" layoutY="106.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtistLastName" disable="true" layoutX="316.0" layoutY="106.0" opacity="0.75">
+                  <TextField fx:id="ExploreArtistLastName" layoutX="299.0" layoutY="106.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtistBirthPlace" disable="true" layoutX="43.0" layoutY="307.0" opacity="0.75">
+                  <TextField fx:id="ExploreArtistBirthPlace" layoutX="43.0" layoutY="307.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtistStyle" disable="true" layoutX="43.0" layoutY="237.0" opacity="0.75">
+                  <TextField fx:id="ExploreArtistStyle" layoutX="43.0" layoutY="237.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtistDOB" disable="true" layoutX="43.0" layoutY="173.0" opacity="0.75">
+                  <TextField fx:id="ExploreArtistDOB" layoutX="302.0" layoutY="172.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <Button fx:id="ArtistUpdate" disable="true" layoutX="112.0" layoutY="368.0" mnemonicParsing="false" onAction="#ArtistUpdate" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Update">
+                  <Button fx:id="ExploreArtistMainMenu" layoutX="385.0" layoutY="368.0" mnemonicParsing="false" onAction="#ExploreArtistMainMenu" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Text fx:id="LabelUpdateArtistAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="244.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
-                  <Button fx:id="UpdateArtistMainMenu" layoutX="396.0" layoutY="368.0" mnemonicParsing="false" onAction="#UpdateArtistMainMenu" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
-                     <font>
-                        <Font name="System Bold" size="13.0" />
-                     </font>
-                  </Button>
-                  <Button id="edit" fx:id="UpdateArtistBirthPlaceButton" disable="true" layoutX="221.0" layoutY="307.0" mnemonicParsing="false" onAction="#UpdateArtistBirthPlace" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtistStyleButton" disable="true" layoutX="221.0" layoutY="237.0" mnemonicParsing="false" onAction="#UpdateArtistStyle" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtistDOBButton" disable="true" layoutX="221.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtistDOB" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtistLastNameButtton" disable="true" layoutX="494.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtistLastName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtistFirstNameButton" disable="true" layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtistFirstName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
                   <Text fill="#f8f5f5" layoutX="43.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                      <font>
                         <Font name="System Bold" size="15.0" />
@@ -94,27 +83,30 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Text>
-                  <Text fill="#f8f5f5" layoutX="316.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                  <Text fill="#f8f5f5" layoutX="300.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Text>
-                  <Button fx:id="ArtistDelete" disable="true" layoutX="253.0" layoutY="368.0" mnemonicParsing="false" onAction="#ArtistDelete" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Delete">
+                  <Button fx:id="ArtistExploreAnd" layoutX="86.0" layoutY="368.0" mnemonicParsing="false" onAction="#ArtistExploreAnd" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Explore AND">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Text fill="#f8f5f5" layoutX="43.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Unique ArtistID">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font>
-                  </Text>
-                  <TextField fx:id="UpdateArtistUniqueID" layoutX="233.0" layoutY="28.0" opacity="0.75" promptText="e.g. A1000">
+                  <TextField fx:id="ExploreArtistUniqueID" layoutX="43.0" layoutY="41.0" opacity="0.69">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <Button layoutX="465.0" layoutY="29.0" mnemonicParsing="false" onAction="#ArtistUpdateIDEnter" opacity="0.73" prefHeight="31.0" prefWidth="82.0" text="Enter">
+                  <CheckBox fx:id="ExploreArtistDOBLessThan" layoutX="42.0" layoutY="179.0" mnemonicParsing="false" text="Less than" textFill="#fffefe" />
+                  <CheckBox fx:id="ExploreArtistDOBMoreThan" layoutX="141.0" layoutY="179.0" mnemonicParsing="false" text="More than" textFill="#fffefe" />
+                  <CheckBox fx:id="ExploreArtistDOBOn" layoutX="242.0" layoutY="179.0" mnemonicParsing="false" text="On" textFill="#fffefe" />
+                  <Text fill="#f8f5f5" layoutX="50.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ArtistID">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="ArtistExploreOr" layoutX="236.0" layoutY="368.0" mnemonicParsing="false" onAction="#ArtistExploreOr" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Explore OR">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>

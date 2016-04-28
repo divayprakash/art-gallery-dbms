@@ -24,16 +24,6 @@
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
                   </Text>
-                  <Text fontSmoothingType="LCD" layoutX="422.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Divay Prakash">
-                     <font>
-                        <Font name="Brush Script MT Italic" size="20.0" />
-                     </font>
-                  </Text>
-                  <Text fontSmoothingType="LCD" layoutX="60.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anant Mittal">
-                     <font>
-                        <Font name="Brush Script MT Italic" size="20.0" />
-                     </font>
-                  </Text>
                </children>
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
@@ -48,22 +38,22 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="NewArtistFirstName" layoutX="43.0" layoutY="41.0" opacity="0.75" promptText="First Name">
+                  <TextField fx:id="NewArtistFirstName" layoutX="43.0" layoutY="41.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="NewArtistLastName" layoutX="281.0" layoutY="41.0" opacity="0.75" promptText="Last Name">
+                  <TextField fx:id="NewArtistLastName" layoutX="281.0" layoutY="41.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="NewArtistBirthPlace" layoutX="43.0" layoutY="133.0" opacity="0.75" promptText="Birthplace">
+                  <TextField fx:id="NewArtistBirthPlace" layoutX="43.0" layoutY="156.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="NewArtistStyle" layoutX="43.0" layoutY="183.0" opacity="0.75" promptText="Style">
+                  <TextField fx:id="NewArtistStyle" layoutX="43.0" layoutY="217.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -78,40 +68,59 @@
                         <Font size="23.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="31.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                  <Text fill="WHITE" layoutX="31.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
                      <font>
                         <Font size="23.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="31.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                  <Text fill="WHITE" layoutX="31.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
                      <font>
                         <Font size="23.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="31.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+                  <Text fill="WHITE" layoutX="31.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
                      <font>
                         <Font size="23.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="NewArtistArtworks" alignment="TOP_LEFT" layoutX="43.0" layoutY="229.0" opacity="0.74" prefHeight="76.0" prefWidth="454.0" promptText="Artworks(comma seperated)">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </TextField>
-                  <Button fx:id="NewArtistAdd" layoutX="122.0" layoutY="341.0" mnemonicParsing="false" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Add">
+                  <Button fx:id="NewArtistAdd" layoutX="140.0" layoutY="352.0" mnemonicParsing="false" onAction="#NewArtistAdd" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Add">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Text fx:id="LabelNewArtistAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="185.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelNewArtistAlreadyExist" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entry Already Exist" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelNewArtistMandatoryFields" fill="#d31301" fontSmoothingType="LCD" layoutX="184.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill all the madatory fields" wrappingWidth="192.91455078125" />
-                  <Button fx:id="NewArtistMainMenu" layoutX="266.0" layoutY="341.0" mnemonicParsing="false" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
+                  <Text fx:id="LabelNewArtistAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="203.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" visible="false" wrappingWidth="192.91455078125" />
+                  <Text fx:id="LabelNewArtistMandatoryFields" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill all the mandatory fields" visible="false" wrappingWidth="192.91455078125" />
+                  <Button fx:id="NewArtistMainMenu" layoutX="299.0" layoutY="352.0" mnemonicParsing="false" onAction="#NewArtistMainMenu" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <DatePicker fx:id="NewArtistDOB" layoutX="43.0" layoutY="89.0" opacity="0.75" prefHeight="31.0" prefWidth="213.0" promptText="Date of Birth" />
+                  <Text fill="#fcf5f5" fontSmoothingType="LCD" layoutX="43.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fcf5f5" fontSmoothingType="LCD" layoutX="280.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fcf5f5" fontSmoothingType="LCD" layoutX="43.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fcf5f5" fontSmoothingType="LCD" layoutX="43.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Place">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fcf5f5" fontSmoothingType="LCD" layoutX="43.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Style">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <DatePicker fx:id="NewArtistDOB" layoutX="43.0" layoutY="102.0" opacity="0.65" prefHeight="27.0" prefWidth="214.0" />
                </children>
             </AnchorPane>
         </items>

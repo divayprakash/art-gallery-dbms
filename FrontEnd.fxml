@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrontEndController">
+   <children>
+      <SplitPane dividerPositions="0.12040133779264214" minHeight="600.0" minWidth="600.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0">
+        <items>
+            <AnchorPane id="headpane" prefHeight="193.0" prefWidth="598.0" stylesheets="@style.css">
+               <children>
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="197.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Art Gallery">
+                     <font>
+                        <Font name="Brush Script MT Italic" size="43.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane id="headpane" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane prefHeight="540.0" prefWidth="600.0" rotateGraphic="true" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab closable="false" text="Artists">
+                        <content>
+                          <AnchorPane id="pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@style.css">
+                                 <children>
+                                    <Button fx:id="AddNewArtistButton" layoutX="61.0" layoutY="124.0" mnemonicParsing="false" onAction="#AddNewArtist" prefHeight="155.0" prefWidth="90.0" text="Add &#10;New&#10;Artist">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="23.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="255.0" layoutY="124.0" mnemonicParsing="false" onAction="#UpdateArtistDetails" prefHeight="155.0" prefWidth="90.0" text="Update&#10;Artist&#10;Details">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="23.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="449.0" layoutY="124.0" mnemonicParsing="false" onAction="#ExploreArtists" prefHeight="155.0" prefWidth="90.0" text="Explore&#10;Artists">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="22.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab id="pane" text="Artworks">
+                        <content>
+                          <AnchorPane id="pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@style.css">
+                                 <children>
+                                    <Button layoutX="61.0" layoutY="125.0" mnemonicParsing="false" onAction="#AddNewArtwork" prefHeight="154.0" prefWidth="91.0" text="Add&#10;New&#10;Artwork">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="22.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="255.0" layoutY="125.0" mnemonicParsing="false" onAction="#UpdateArtworkDetails" prefHeight="154.0" prefWidth="91.0" text="Update&#10;Artwork&#10;Details">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="21.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="448.0" layoutY="125.0" mnemonicParsing="false" onAction="#ExploreArtwork" prefHeight="154.0" prefWidth="91.0" text="Explore&#10;Artwork">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="22.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab text="Customers">
+                          <content>
+                            <AnchorPane id="pane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@style.css">
+                                 <children>
+                                    <Button layoutX="61.0" layoutY="123.0" mnemonicParsing="false" onAction="#AddNewCustomer" prefHeight="154.0" prefWidth="91.0" text="Add&#10;New&#10;Customer">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="19.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="255.0" layoutY="123.0" mnemonicParsing="false" onAction="#UpdateCustomerDetails" prefHeight="155.0" prefWidth="91.0" text="Update&#10;Customer&#10;Details">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="19.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="446.0" layoutY="124.0" mnemonicParsing="false" onAction="#ViewCustomers" prefHeight="154.0" prefWidth="91.0" text="View&#10;Customers">
+                                       <font>
+                                          <Font name="Brush Script MT Italic" size="19.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -28,7 +28,7 @@
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="166.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Customer Details">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="118.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Customer Details">
                      <font>
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
@@ -53,16 +53,14 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Text fx:id="LabelUpdateCustomerAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="203.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelUpdateCustomerAlreadyExist" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entry Already Exist" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelUpdateCustomerMandatoryFields" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill all the madatory fields" wrappingWidth="192.91455078125" />
+                  <Text fx:id="LabelUpdateCustomerAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="259.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
                   <Button fx:id="UpdateCustomerMainMenu" layoutX="396.0" layoutY="368.0" mnemonicParsing="false" onAction="#UpdateCustomerMainMenu" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
                   <Button id="edit" fx:id="UpdateCustomerMoneySpentButton" layoutX="221.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateCustomerMoneySpent" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateCustomerLastNameButton" layoutX="494.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateCustomerLastName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateCustomerLastNameButton" layoutX="494.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateCustomerLastName" opacity="0.61" prefHeight="32.0" prefWidth="42.0" stylesheets="@style.css" />
                   <Button id="edit" fx:id="UpdateCustomerFirstNameButton" layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateCustomerFirstName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
                   <Text fill="#f8f5f5" layoutX="43.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                      <font>
@@ -89,12 +87,12 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="UpdateCustomerUniqueID" layoutX="233.0" layoutY="28.0" opacity="0.75" promptText="e.g. A1000">
+                  <TextField fx:id="UpdateCustomerUniqueID" layoutX="239.0" layoutY="28.0" opacity="0.75" promptText="e.g. C1000">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateCustomerPrefArtists" alignment="TOP_LEFT" layoutX="43.0" layoutY="241.0" opacity="0.74" prefHeight="76.0" prefWidth="454.0">
+                  <TextField fx:id="UpdateCustomerPrefArtists" alignment="TOP_LEFT" layoutX="43.0" layoutY="240.0" opacity="0.74" prefHeight="76.0" prefWidth="491.0">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -104,7 +102,12 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Text>
-                  <Button id="edit" fx:id="UpdateCustomerPrefArtistsButton" layoutX="460.0" layoutY="240.0" mnemonicParsing="false" onAction="#UpdateCustomerPrefArtists" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateCustomerPrefArtistsButton" layoutX="497.0" layoutY="239.0" mnemonicParsing="false" onAction="#UpdateCustomerPrefArtists" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button layoutX="457.0" layoutY="27.0" mnemonicParsing="false" onAction="#UpdateCustomerIDEnter" opacity="0.71" prefHeight="31.0" prefWidth="80.0" text="Enter">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
         </items>

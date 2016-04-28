@@ -28,32 +28,32 @@
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="166.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Artwork Details">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="135.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Artwork Details">
                      <font>
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="UpdateArtworkArtistFirstName" layoutX="43.0" layoutY="173.0" opacity="0.75">
+                  <TextField fx:id="UpdateArtworkArtistFirstName" disable="true" layoutX="43.0" layoutY="173.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtworkArtistLastName" layoutX="316.0" layoutY="173.0" opacity="0.75">
+                  <TextField fx:id="UpdateArtworkArtistLastName" disable="true" layoutX="316.0" layoutY="173.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtworkType" layoutX="43.0" layoutY="240.0" opacity="0.75">
+                  <TextField fx:id="UpdateArtworkType" disable="true" layoutX="43.0" layoutY="240.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtworkYear" layoutX="316.0" layoutY="106.0" opacity="0.75">
+                  <TextField fx:id="UpdateArtworkYear" disable="true" layoutX="316.0" layoutY="106.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <TextField fx:id="UpdateArtworkTitle" layoutX="43.0" layoutY="106.0" opacity="0.75">
+                  <TextField fx:id="UpdateArtworkTitle" disable="true" layoutX="43.0" layoutY="106.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -63,19 +63,17 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Text fx:id="LabelUpdateArtworkAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="203.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelUpdateArtworkAlreadyExist" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entry Already Exist" wrappingWidth="192.91455078125" />
-                  <Text fx:id="LabelUpdateArtworkMandatoryFields" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill all the madatory fields" wrappingWidth="192.91455078125" />
+                  <Text fx:id="LabelUpdateArtworkAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="256.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
                   <Button fx:id="UpdateArtworkMainMenu" layoutX="398.0" layoutY="382.0" mnemonicParsing="false" onAction="#UpdateArtworkMainMenu" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
-                  <Button id="edit" fx:id="UpdateArtworkTypeButton" layoutX="221.0" layoutY="240.0" mnemonicParsing="false" onAction="#UpdateArtworkType" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtworkYearButton" layoutX="494.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtworkYear" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtworkArtistFirstNameButton" layoutX="221.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtworkArtistFirstName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtworkArtistLastNameButton" layoutX="494.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtworkArtistLastName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtworkTitleButton" layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtworkTitle" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateArtworkTypeButton" disable="true" layoutX="221.0" layoutY="240.0" mnemonicParsing="false" onAction="#UpdateArtworkType" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateArtworkYearButton" disable="true" layoutX="494.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtworkYear" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateArtworkArtistFirstNameButton" disable="true" layoutX="221.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtworkArtistFirstName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateArtworkArtistLastNameButton" disable="true" layoutX="494.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtworkArtistLastName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateArtworkTitleButton" disable="true" layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtworkTitle" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
                   <Text fill="#f8f5f5" layoutX="43.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                      <font>
                         <Font name="System Bold" size="15.0" />
@@ -111,7 +109,7 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="UpdateArtworkUniqueID" layoutX="233.0" layoutY="28.0" opacity="0.75" promptText="e.g. A1000">
+                  <TextField fx:id="UpdateArtworkUniqueID" layoutX="233.0" layoutY="28.0" opacity="0.75" promptText="e.g. R1000">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -121,13 +119,13 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="UpdateArtworkPrice" layoutX="316.0" layoutY="240.0" opacity="0.75">
+                  <TextField fx:id="UpdateArtworkPrice" disable="true" layoutX="316.0" layoutY="240.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <Button id="edit" fx:id="UpdateArtworkPriceButton" layoutX="494.0" layoutY="240.0" mnemonicParsing="false" onAction="#UpdateArtworkPrice" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <TextField fx:id="UpdateArtworkGroups" alignment="TOP_LEFT" layoutX="43.0" layoutY="299.0" opacity="0.74" prefHeight="76.0" prefWidth="454.0">
+                  <Button id="edit" fx:id="UpdateArtworkPriceButton" disable="true" layoutX="494.0" layoutY="240.0" mnemonicParsing="false" onAction="#UpdateArtworkPrice" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <TextField fx:id="UpdateArtworkGroups" alignment="TOP_LEFT" layoutX="43.0" layoutY="299.0" opacity="0.74" prefHeight="76.0" prefWidth="489.0">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -137,7 +135,13 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Text>
-                  <Button id="edit" fx:id="UpdateArtworkGroupButton" layoutX="462.0" layoutY="299.0" mnemonicParsing="false" onAction="#UpdateArtworkGroup" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateArtworkGroupButton" layoutX="494.0" layoutY="299.0" mnemonicParsing="false" onAction="#UpdateArtworkGroup" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button layoutX="465.0" layoutY="28.0" mnemonicParsing="false" onAction="#ArtworkUpdateIDEnter" opacity="0.71" prefHeight="32.0" prefWidth="67.0" text="Enter">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="LabelUpdateArtworkMandatoryField" fill="#07cd00" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
                </children>
             </AnchorPane>
         </items>
