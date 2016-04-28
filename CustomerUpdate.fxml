@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrontEndController">
+   <children>
+      <SplitPane dividerPositions="0.12040133779264214" layoutY="6.0" minHeight="600.0" minWidth="600.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0">
+        <items>
+          <AnchorPane id="otherheadpane" minHeight="0.0" minWidth="0.0" prefHeight="60.0" prefWidth="598.0" stylesheets="@style.css">
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="210.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Art Gallery">
+                     <font>
+                        <Font name="Brush Script MT Italic" size="43.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
+               <children>
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="166.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Customer Details">
+                     <font>
+                        <Font name="Brush Script MT Italic" size="43.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="UpdateCustomerFirstName" layoutX="43.0" layoutY="106.0" opacity="0.75">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="UpdateCustomerLastName" layoutX="316.0" layoutY="106.0" opacity="0.75">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="UpdateCustomerMoneySpent" layoutX="43.0" layoutY="173.0" opacity="0.75">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="CustomerUpdate" layoutX="112.0" layoutY="368.0" mnemonicParsing="false" onAction="#CustomerUpdate" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Update">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="LabelUpdateCustomerAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="203.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
+                  <Text fx:id="LabelUpdateCustomerAlreadyExist" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entry Already Exist" wrappingWidth="192.91455078125" />
+                  <Text fx:id="LabelUpdateCustomerMandatoryFields" fill="#d31301" fontSmoothingType="LCD" layoutX="203.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill all the madatory fields" wrappingWidth="192.91455078125" />
+                  <Button fx:id="UpdateCustomerMainMenu" layoutX="396.0" layoutY="368.0" mnemonicParsing="false" onAction="#UpdateCustomerMainMenu" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button id="edit" fx:id="UpdateCustomerMoneySpentButton" layoutX="221.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateCustomerMoneySpent" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateCustomerLastNameButton" layoutX="494.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateCustomerLastName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateCustomerFirstNameButton" layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateCustomerFirstName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Text fill="#f8f5f5" layoutX="43.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#f8f5f5" layoutX="43.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money Spent">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#f8f5f5" layoutX="316.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="CustomerDelete" layoutX="253.0" layoutY="368.0" mnemonicParsing="false" onAction="#CustomerDelete" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Delete">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Text fill="#f8f5f5" layoutX="43.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Unique CustomerID">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="UpdateCustomerUniqueID" layoutX="233.0" layoutY="28.0" opacity="0.75" promptText="e.g. A1000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="UpdateCustomerPrefArtists" alignment="TOP_LEFT" layoutX="43.0" layoutY="241.0" opacity="0.74" prefHeight="76.0" prefWidth="454.0">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <Text fill="#f8f5f5" layoutX="43.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preferred Artists">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button id="edit" fx:id="UpdateCustomerPrefArtistsButton" layoutX="460.0" layoutY="240.0" mnemonicParsing="false" onAction="#UpdateCustomerPrefArtists" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
