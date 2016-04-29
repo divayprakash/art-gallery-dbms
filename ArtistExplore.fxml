@@ -28,7 +28,7 @@
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="340.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore Artists">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="313.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Explore Artists">
                      <font>
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
@@ -49,11 +49,6 @@
                      </font>
                   </TextField>
                   <TextField fx:id="ExploreArtistStyle" layoutX="43.0" layoutY="237.0" opacity="0.75">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </TextField>
-                  <TextField fx:id="ExploreArtistDOB" layoutX="302.0" layoutY="172.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -111,6 +106,7 @@
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
+                  <DatePicker fx:id="ExploreArtistDOB" layoutX="298.0" layoutY="175.0" opacity="0.75" />
                </children>
             </AnchorPane>
         </items>

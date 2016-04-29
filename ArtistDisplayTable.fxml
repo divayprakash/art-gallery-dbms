@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrontEndController">
+   <children>
+      <SplitPane dividerPositions="0.12040133779264214" layoutY="6.0" minHeight="600.0" minWidth="600.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="600.0">
+         <items>
+            <AnchorPane id="otherheadpane" minHeight="0.0" minWidth="0.0" prefHeight="60.0" prefWidth="598.0" stylesheets="@style.css">
+               <children>
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="210.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Art Gallery">
+                     <font>
+                        <Font name="Brush Script MT Italic" size="43.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </AnchorPane>
+            <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
+               <children>
+                  <TableView fx:id="ArtistTable" opacity="0.75" prefHeight="523.0" prefWidth="598.0">
+                    <columns>
+                      <TableColumn fx:id="ID" prefWidth="75.0" text="ArtistID" />
+                      <TableColumn fx:id="FN" prefWidth="75.0" text="First Name" />
+                        <TableColumn fx:id="LN" prefWidth="75.0" text="Last Name" />
+                        <TableColumn fx:id="BP" prefWidth="75.0" text="Birthplace" />
+                        <TableColumn fx:id="DOB" prefWidth="75.0" text="DOB" />
+                        <TableColumn fx:id="S" prefWidth="75.0" text="Style" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

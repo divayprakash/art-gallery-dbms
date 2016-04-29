@@ -28,9 +28,9 @@
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="118.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Customer Details">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="70.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Customer Details">
                      <font>
-                        <Font name="Brush Script MT Italic" size="43.0" />
+                        <Font size="36.0" />
                      </font>
                   </Text>
                   <TextField fx:id="UpdateCustomerFirstName" layoutX="43.0" layoutY="106.0" opacity="0.75">

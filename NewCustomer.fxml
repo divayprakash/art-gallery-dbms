@@ -28,7 +28,7 @@
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="231.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Customer Details">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="163.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Customer Details">
                      <font>
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
@@ -78,13 +78,13 @@
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </TextField>
-                  <Button fx:id="NewCustomerAdd" layoutX="122.0" layoutY="341.0" mnemonicParsing="false" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Add">
+                  <Button fx:id="NewCustomerAdd" layoutX="122.0" layoutY="341.0" mnemonicParsing="false" onAction="#NewCustomerAdd" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Add">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Button>
                   <Text fx:id="LabelNewArtistAdded" fill="#07cd00" fontSmoothingType="LCD" layoutX="243.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Success" wrappingWidth="192.91455078125" />
-                  <Button fx:id="NewCustomerMainMenu" layoutX="266.0" layoutY="341.0" mnemonicParsing="false" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
+                  <Button fx:id="NewCustomerMainMenu" layoutX="266.0" layoutY="341.0" mnemonicParsing="false" onAction="#NewCustomerMainMenu" opacity="0.71" prefHeight="40.0" prefWidth="127.0" text="Main Menu">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>

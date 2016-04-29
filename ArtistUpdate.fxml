@@ -28,7 +28,7 @@
             </AnchorPane>
           <AnchorPane id="otherpane" minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="598.0" stylesheets="@style.css">
                <children>
-                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="166.0" layoutY="494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Artist Details">
+                  <Text blendMode="HARD_LIGHT" fontSmoothingType="LCD" layoutX="51.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update/Delete Artist Details">
                      <font>
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
