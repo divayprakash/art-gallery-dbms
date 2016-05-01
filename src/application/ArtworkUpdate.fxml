@@ -33,12 +33,7 @@
                         <Font name="Brush Script MT Italic" size="43.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="UpdateArtworkArtistFirstName" disable="true" layoutX="43.0" layoutY="173.0" opacity="0.75">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </TextField>
-                  <TextField fx:id="UpdateArtworkArtistLastName" disable="true" layoutX="316.0" layoutY="173.0" opacity="0.75">
+                  <TextField fx:id="UpdateArtworkArtistIDName" disable="true" layoutX="43.0" layoutY="173.0" opacity="0.75">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -71,10 +66,9 @@
                   </Button>
                   <Button id="edit" fx:id="UpdateArtworkTypeButton" disable="true" layoutX="221.0" layoutY="240.0" mnemonicParsing="false" onAction="#UpdateArtworkType" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
                   <Button id="edit" fx:id="UpdateArtworkYearButton" disable="true" layoutX="494.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtworkYear" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtworkArtistFirstNameButton" disable="true" layoutX="221.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtworkArtistFirstName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Button id="edit" fx:id="UpdateArtworkArtistLastNameButton" disable="true" layoutX="494.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtworkArtistLastName" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
+                  <Button id="edit" fx:id="UpdateArtworkArtistIDButton" disable="true" layoutX="221.0" layoutY="173.0" mnemonicParsing="false" onAction="#UpdateArtworkArtistID" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
                   <Button id="edit" fx:id="UpdateArtworkTitleButton" disable="true" layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#UpdateArtworkTitle" opacity="0.61" prefHeight="32.0" prefWidth="36.0" stylesheets="@style.css" />
-                  <Text fill="#f8f5f5" layoutX="43.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+                  <Text fill="#f8f5f5" layoutX="43.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist ID">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>
@@ -90,11 +84,6 @@
                      </font>
                   </Text>
                   <Text fill="#f8f5f5" layoutX="43.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
-                     <font>
-                        <Font name="System Bold" size="15.0" />
-                     </font>
-                  </Text>
-                  <Text fill="#f8f5f5" layoutX="316.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
                      <font>
                         <Font name="System Bold" size="15.0" />
                      </font>

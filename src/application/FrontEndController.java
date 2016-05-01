@@ -65,7 +65,7 @@ public class FrontEndController {
 				System.out.println(name);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
     }
     /*************************************************************************/
@@ -140,7 +140,7 @@ public class FrontEndController {
     			stmt.executeUpdate(sql);
     		}
             catch (Exception e) {
-    			e.printStackTrace();
+    			//e.printStackTrace();
     		}
             LabelNewArtistAdded.setText(labelText);
             NewArtistFirstName.setText(null);
@@ -292,7 +292,7 @@ public class FrontEndController {
 	        UpdateArtistBirthPlace.setText(null);
 	     }
 	     catch (Exception e) {
-	    	e.printStackTrace();
+	    	//e.printStackTrace();
 	     }
     }
 
@@ -315,7 +315,7 @@ public class FrontEndController {
 	        UpdateArtistBirthPlace.setText(null);
 	     }
 	     catch (Exception e) {
-	    	e.printStackTrace();
+	    	//e.printStackTrace();
 	     }
     }
 
@@ -351,7 +351,7 @@ public class FrontEndController {
 				LabelUpdateArtistAdded.setVisible(true);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
     }
 
@@ -376,7 +376,7 @@ public class FrontEndController {
 			rs = stmt.executeQuery(sql);
         }
         catch (Exception e) {
-        	e.printStackTrace();
+        	//e.printStackTrace();
         }
         return rs;
     }
@@ -627,7 +627,7 @@ public class FrontEndController {
 				rs = stmt.executeQuery(sql);
 			}
 			else {
-				String sql2=sql.substring(0,(len-4));
+				String sql2=sql.substring(0,(len-3));
 				System.out.println(sql2);
 				rs = stmt.executeQuery(sql2);
 			}
@@ -777,7 +777,7 @@ public class FrontEndController {
 
             catch (Exception e)
             {
-    			e.printStackTrace();
+    			//e.printStackTrace();
             }
             LabelNewArtworkAdded.setText(labelText);
 
@@ -858,7 +858,7 @@ public class FrontEndController {
     private TextField UpdateArtworkPrice;
 
     @FXML
-    private TextField UpdateArtworkFirstName;
+    private TextField UpdateArtworkArtistID;
 
     @FXML
     private TextField UpdateArtworkLastName;
@@ -876,7 +876,7 @@ public class FrontEndController {
     private Button UpdateArtworkTitleButton;
 
     @FXML
-    private Button UpdateArtworkFirstNameButton;
+    private Button UpdateArtworkArtistIDButton;
 
     @FXML
     private TextField UpdateArtworkGroups;
@@ -886,6 +886,13 @@ public class FrontEndController {
 
     @FXML
     private Button UpdateArtworkGroupButton;
+
+    @FXML
+    private Button UpdateArtworkPrizeButton;
+
+    @FXML
+    private Button UpdateArtworkPrize;
+
 
     @FXML
     void UpdateArtworkMainMenu(ActionEvent event) throws IOException
@@ -912,18 +919,13 @@ public class FrontEndController {
     }
 
     @FXML
-    void UpdateArtworkFirstName(ActionEvent event)
+    void UpdateArtworkArtistID(ActionEvent event)
     {
-    	UpdateArtworkFirstName.setDisable(false);
-    	UpdateArtworkFirstName.requestFocus();
+    	UpdateArtworkArtistID.setDisable(false);
+    	UpdateArtworkArtistID.requestFocus();
     }
 
-    @FXML
-    void UpdateArtworkLastName(ActionEvent event)
-    {
-    	UpdateArtworkLastName.setDisable(false);
-    	UpdateArtworkLastName.requestFocus();
-    }
+
 
     @FXML
     void UpdateArtworkTitle(ActionEvent event)
@@ -948,48 +950,89 @@ public class FrontEndController {
     }
 
     @FXML
-    void ArtworkUpdateIDEnter(ActionEvent event)
+    void ArtworkUpdateIDEnter(ActionEvent event) throws IOException
     {
-        //ResultSet rs=checkArtist(UpdateArtworkUniqueID);
-        if(true)
-        {
-            //enable all the edit buttons
-
-            {
-                UpdateArtworkTitleButton.setDisable(false);
-                UpdateArtworkTitle.setText("IHbewsvgv");
-                UpdateArtworkYearButton.setDisable(false);
-                //UpdateArtistLastName.setText(rs.getString("Year"));
-                UpdateArtworkFirstNameButton.setDisable(false);
-                //UpdateArtworkFirstName.setText(rs.getString("First Name"));
-                UpdateArtworkLastNameButton.setDisable(false);
-                //UpdateArtworkLastName.setText(rs.getString("Last Name"));
-                UpdateArtworkTypeButton.setDisable(false);
-                //UpdateArtworkType.setText(rs.getString("Type"));
-                UpdateArtworkPriceButton.setDisable(false);
-                //UpdateArtworkPrice.setText(rs.getString("Price"));
-                UpdateArtworkGroupButton.setDisable(false);
-                //UpdateArtworkGroups.setText(rs.getString("Group"));
-                ArtworkUpdate.setDisable(false);
-                ArtworkDelete.setDisable(false);
-                LabelUpdateArtworkAdded.setVisible(false);
-            }
-
-
-
-        }
+        ResultSet rs=checkArtwork(UpdateArtworkUniqueID);
+        try {
+		if(rs.next())
+			{
+			     	UpdateArtworkArtistIDButton.setDisable(false);
+			        UpdateArtworkArtistID.setText(rs.getString("aid"));
+			        UpdateArtworkType.setDisable(false);
+			        UpdateArtworkType.setText(rs.getString("ty"));
+			        UpdateArtworkYearButton.setDisable(false);
+			        UpdateArtworkYear.setText(rs.getString("y"));
+			        UpdateArtworkTitle.setDisable(false);
+			        UpdateArtworkTitle.setText(rs.getString("t"));
+			        ArtworkUpdate.setDisable(false);
+			        ArtworkDelete.setDisable(false);
+			        LabelUpdateArtworkAdded.setVisible(false);
+			}
+			else {
+				LabelUpdateArtworkAdded.setText("No record found!");
+				UpdateArtworkArtistID.setText(null);
+				UpdateArtworkGroups.setText(null);
+		        UpdateArtworkPrice.setText(null);
+		        UpdateArtworkTitle.setText(null);
+		        UpdateArtworkType.setText(null);
+		        UpdateArtworkUniqueID.setText(null);
+				LabelUpdateArtworkAdded.setVisible(true);
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
+		}
     }
 
     @FXML
     void ArtworkDelete(ActionEvent event)
     {
+        try {
+    		conn = DriverManager.getConnection(DB_URL,USER,PASS);
+		stmt = conn.createStatement();
+		String sql = "delete from artwork where id='" +
+		UpdateArtworkArtistID.getText() + "';" ;
+		stmt.executeUpdate(sql);
+		LabelUpdateArtworkAdded.setText("Record deleted!");
+		LabelUpdateArtworkAdded.setFill(Color.RED);
+		LabelUpdateArtworkAdded.setVisible(true);
+                UpdateArtworkArtistID.setText(null);
+		UpdateArtworkYear.setText(null);
+	        UpdateArtworkType.setText(null);
+	        UpdateArtworkPrize.setText(null);
+	        UpdateArtworkTitle.setText(null);
 
+	     }
+	     catch (Exception e) {
+	    	//e.printStackTrace();
+	     }
     }
 
     @FXML
     void ArtworkUpdate(ActionEvent event)
     {
-
+        try {
+    		conn = DriverManager.getConnection(DB_URL,USER,PASS);
+		stmt = conn.createStatement();
+		String sql = "update artwork set t='" +
+		UpdateArtworkTitle.getText() + "',aid='" +
+		UpdateArtworkArtistID.getText() + "',y='" +
+		UpdateArtworkYear.getText() + "',ty='" +
+		UpdateArtworkType.getText() + "',p='" +
+		UpdateArtworkPrize.getText() + "' where id='" +
+		UpdateArtworkArtistID.getText() + "';" ;
+                stmt.executeUpdate(sql);
+		LabelUpdateArtworkAdded.setText("Record updated!");
+		LabelUpdateArtworkAdded.setFill(Color.RED);
+		LabelUpdateArtworkAdded.setVisible(true);
+		UpdateArtworkArtistID.setText(null);
+		UpdateArtworkYear.setText(null);
+	        UpdateArtworkType.setText(null);
+	        UpdateArtworkPrize.setText(null);
+	        UpdateArtworkTitle.setText(null);
+	     }
+	     catch (Exception e) {
+	    	//e.printStackTrace();
+	     }
     }
 
     @FXML
@@ -997,9 +1040,26 @@ public class FrontEndController {
     {
     	Parent parent = FXMLLoader.load(getClass().getResource("ArtworkUpdate.fxml"));
         Scene scene = new Scene(parent);
-	Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-	stage.setScene(scene);
-	stage.show();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+     @FXML
+    private ResultSet checkArtwork(TextField UpdateArtworkUniqueID)
+    {
+    	String id = UpdateArtworkUniqueID.getText();
+        ResultSet rs=null;
+        try {
+        	conn = DriverManager.getConnection(DB_URL,USER,PASS);
+		stmt = conn.createStatement();
+		String sql = "select * from  artwork where id='" + id +"';";
+		rs = stmt.executeQuery(sql);
+        }
+        catch (Exception e) {
+        	//e.printStackTrace();
+        }
+        return rs;
     }
 
     /*************************************************************************/
